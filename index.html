@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Egressos - Estilo Clonify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <p class="team-overline">NOSSA COMUNIDADE</p>
+        <h1>Egressos da Computação</h1>
+        <p class="team-description">
+            Explore os perfis dos nossos egressos dos cursos de Ciência da Computação,
+            Engenharia da Computação, Mestrado e Doutorado. Veja onde estão e o que conquistaram!
+        </p>
+    </header>
+
+    <section class="filter-section">
+        <h2>Filtrar Egressos</h2>
+        <div class="filters">
+            <select id="filter-curso">
+                <option value="">Todos os Cursos</option>
+                </select>
+            <input type="number" id="filter-ano" placeholder="Ano de Conclusão">
+            <button id="btn-filtrar">Filtrar</button>
+        </div>
+    </section>
+
+    <main id="egressos-grid" class="team-grid-layout">
+        <div class="loading-message" id="loading">Carregando egressos...</div>
+        <div class="empty-message" id="empty" style="display:none;">Nenhum egresso encontrado com os filtros selecionados.</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Universidade Federal de Pelotas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0;
+    background-color: #ffffff; 
+    color: #333;
+    line-height: 1.6;
+}
+
+.main-header {
+    text-align: center;
+    padding: 40px;
+    background-color: #343a40; 
+}
+
+.team-overline {
+    color: #f1f3f5; 
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.main-header h1 {
+    font-size: 2.8em; 
+    color: white; 
+    font-weight: 700;
+}
+
+.team-description {
+    font-size: 1.1em;
+    color: #f1f3f5;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.filter-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f3f5; 
+    margin-bottom: 30px;
+}
+
+.filter-section h2 {
+    font-size: 1.5em;
+    color: #343a40;
+    margin: 0 15px 10px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Para responsividade */
+}
+
+.filters select,
+.filters input {
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1em;
+    min-width: 200px; /* Para melhor toque em mobile */
+}
+
+.filters button {
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #0056b3;
+}
+
+.team-grid-layout { /* Substituindo #egressos-grid para o estilo dos cards */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Cards um pouco menores */
+    gap: 30px; /* Espaçamento maior */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.egresso-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left; 
+    overflow: hidden; /* Para o fundo da imagem não vazar */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.egresso-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-image-background {
+    height: 200px; /* Altura para a foto */
+    background-color: #e0e7ff; /* Cor de fundo padrão, pode ser variada via JS */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Garante que a imagem não ultrapasse */
+}
+
+.egresso-card img {
+    width: 100%; /* Para preencher o .card-image-background */
+    height: 100%;
+    object-fit: cover; /* Para cobrir o espaço sem distorcer */
+    /* Remover borda-radius se a imagem for ocupar todo o espaço superior */
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.egresso-card h3 { /* Nome do egresso */
+    margin: 0 0 5px 0;
+    font-size: 1.3em;
+    color: #343a40;
+    font-weight: 600;
+}
+
+.egresso-card .role { /* Curso ou "Egresso" */
+    font-size: 0.95em;
+    color: #007bff; 
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.egresso-card .description { /* Período de formação ou mini-bio */
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-bottom: 15px;
+    min-height: 50px; 
+}
+
+.egresso-card .social-links {
+    padding-top: 10px;
+    border-top: 1px solid #e9ecef; /* Linha separadora */
+}
+
+.egresso-card .social-links a {
+    color: #6c757d; 
+    margin-right: 15px; 
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.egresso-card .social-links a:hover {
+    color: #007bff;
+}
+
+#loading, #empty {
+    text-align: center;
+    padding: 30px;
+    grid-column: 1 / -1;
+    font-size: 1.1em;
+    color: #6c757d;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40; 
+    color: #f8f9fa;
+    margin-top: 40px; 
+}
+
+/* Cores de fundo para as imagens dos cards (para variar como no exemplo) */
+.bg-color-1 { background-color: #e0f7fa; } /* Azul claro */
+.bg-color-2 { background-color: #fff3e0; } /* Laranja claro */
+.bg-color-3 { background-color: #e8eaf6; } /* Lavanda claro */
+.bg-color-4 { background-color: #e0f2f1; } /* Verde água claro */
+.bg-color-5 { background-color: #fce4ec; } /* Rosa claro */
